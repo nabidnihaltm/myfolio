@@ -1,0 +1,372 @@
+/* Common css start  */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section_info{
+    text-align: center;
+}
+.section_info h2{
+    color: #02918c;
+    font-weight: 800;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.section_info p{
+    color: #7e8287;
+    font-size: 16px;
+    line-height: 41px;
+    margin: auto;
+}
+
+/* common css end  */
+
+/* nav section start  */
+#navigation{
+    background-color: #02918c;
+}
+
+#navigation div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    /* margin: 5px 0; */
+    display: inline-block;
+
+}
+#navigation ul li:hover a{
+    background-color: #cfc91d;
+    color: #02918c;
+    /* margin: 0px 5px; */
+    border-radius: 15px;
+}
+
+/* nav section end  */
+/* main section start  */
+
+/* banner section start  */
+
+#banner{
+    background-image: url(./image/MYFOLIObackgrnd.jpg);
+    height: 728px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+ 
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+    background-color: black;
+    z-index: -1;
+}
+
+
+#banner .container{
+    height: 100%;
+
+}
+#banner .row {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner p{
+    font-size: 18px;   
+}
+#banner img{
+    display: block;
+    margin: 52px auto;
+}
+#banner a{
+    font-size: 14px;
+    color: #0b1016;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    padding: 20px 42px;
+    display: inline-block;
+    letter-spacing: 4px;
+    transition: 0.1s;
+}
+#banner a:hover{
+    background-color: #02918c;
+    color: #dae3ee;
+    border-radius: 100px;
+    border: #091a24;
+}
+
+
+/* banner section end  */
+
+/* about section start  */
+
+#about{
+    background-color: #ffffff;
+    padding: 98px 0;
+}
+#about .section_info p{
+    width: 880px;
+}
+#about .section_info p b{
+    font-size: 23px ;
+    font-weight: 800;
+}
+
+#about .about_item{
+    width: 25%;
+    text-align: center;
+    border-right: 1px dotted black;
+    padding: 35px 60px;
+    margin-top: 78px;
+    transition: 0.1s;
+}
+#about .about_item:last-child{
+    border-right: none;
+}
+#about .about_item h4{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 30px 0;
+}
+#about .about_item p{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 21px;
+}
+#about .about_item:hover{
+    border-radius: 20px;
+    color: #cfc91d;
+    background-color: #e7f1e5;
+}
+
+
+/* about section end  */
+
+/* service start section  */
+
+#service{
+    background-image: url(./image/MYFOLIO-Recovered-Recovered.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#service .services{
+    width: 50%;
+}
+#service .services .section_info{
+    text-align: left;
+    padding: 75px 0 55px;
+    margin-right: 96px;
+}
+
+
+#service .service_item{
+    width: 50%;
+    text-align: left;
+    padding-right: 100px;
+    margin-bottom: 55px;
+    transition: 0.1s;
+}
+#service .row .service_item h4{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 15px 0;
+}
+#service .row .service_item p{
+    color: #7e8287;
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 400;
+}
+#service .service_item:hover{
+    border-radius: 10px;
+    font-color: #24812c;
+    background-color: rgba(207, 226, 210, 0.5);
+    border: none;
+    
+}
+
+
+/* service end section  */
+
+/* my work start section */
+
+#mywork .section_info{
+    padding: 110px 0 80px;
+}
+#mywork .section_info p{
+    width: 680px;
+}
+
+#mywork .mywork_item{
+    width: 25%;
+}
+#mywork .mywork_item img{
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+
+}
+#mywork .mywork_item{
+    position: relative;
+}
+#mywork .mywork_item .overlay h4{
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+
+}
+#mywork .mywork_item .overlay p{
+    font-size: 13px;
+    color: #ffff;
+    text-align: center;
+    font-weight: 400;   
+}
+#mywork .mywork_item .overlay{
+    position: absolute;
+    z-index: 99;
+    inset: 20px 27px;
+    text-align: center;
+    background-color: rgba(2,145,139,0.8);
+    padding: 58px 50px;    
+    opacity: 0;
+    visibility: hidden;
+}
+#mywork .mywork_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* my work section end  */
+
+/* contact start section  */
+
+#contact .section_info{
+    padding: 100px 0 70px;
+}
+#contact .section_info p{
+    text-align: center;
+    width: 680px;
+}
+#contact .footer{
+    background-color: #0b1016;
+    padding: 67px 0;
+}
+#contact .footer input,
+#contact .footer textarea{
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    font-size: 16px;
+    padding: 18px;
+    margin: auto;
+    margin-bottom: 51px;
+    text-align: center;
+    color: #7e8287;
+}
+#contact .footer input:nth-child(1),
+#contact .footer input:nth-child(2){
+    width: 640px;
+}
+#contact .footer input:nth-child(3),
+#contact .footer textarea{
+    width: 920px;
+}
+#contact .footer textarea{
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+#contact .footer input::placeholder, 
+#contact .footer textarea::placeholder{
+    text-transform: uppercase;
+}
+
+
+
+#contact .footer button{
+    font-size: 14px;
+    color: #0b1016;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    padding: 20px 60px;
+    letter-spacing: 4px;
+    transition: 0.3s;
+    display: block;
+    margin: auto;
+}
+
+#contact .footer button:hover{
+    background-color: #02918c;
+    color: #dae3ee;
+    border-radius: 100px;
+    border: #091a24;
+}
+
+#foot{
+    background-color: #000000;
+    color: #7e8287;
+    text-align: center;
+}
+
+
+
+/* contact end section  */
+
+/* main section end  */
+
+/* custom scrollbar  */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #20ad3d;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#909d36, #112c55);
+    border-radius: 10px;
+}
+/* custom scrollbar  */
+
